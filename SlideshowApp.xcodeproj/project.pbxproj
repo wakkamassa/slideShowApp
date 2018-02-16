@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63513B1D20373403005C48D9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63513B1C20373403005C48D9 /* ResultViewController.swift */; };
 		63AC14F9202C68B800D4DF9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AC14F8202C68B800D4DF9B /* AppDelegate.swift */; };
 		63AC14FB202C68B800D4DF9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AC14FA202C68B800D4DF9B /* ViewController.swift */; };
 		63AC14FE202C68B800D4DF9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AC14FC202C68B800D4DF9B /* Main.storyboard */; };
 		63AC1500202C68B800D4DF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AC14FF202C68B800D4DF9B /* Assets.xcassets */; };
 		63AC1503202C68B800D4DF9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AC1501202C68B800D4DF9B /* LaunchScreen.storyboard */; };
+		63AC1519202DFFDA00D4DF9B /* 6df1cb779f522db682d5f5875cd2661d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63AC1514202DFFDA00D4DF9B /* 6df1cb779f522db682d5f5875cd2661d.jpg */; };
+		63AC151A202DFFDA00D4DF9B /* nba18mobile-intro_hero-xs-2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63AC1515202DFFDA00D4DF9B /* nba18mobile-intro_hero-xs-2x.jpg */; };
+		63AC151B202DFFDA00D4DF9B /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 63AC1516202DFFDA00D4DF9B /* images.jpeg */; };
+		63AC151D202DFFDA00D4DF9B /* lebron-james-nba-playoffs-run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63AC1518202DFFDA00D4DF9B /* lebron-james-nba-playoffs-run.jpg */; };
+		63AC151F2031AF4C00D4DF9B /* images-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 63AC151E2031AF4C00D4DF9B /* images-1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63513B1C20373403005C48D9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		63AC14F5202C68B800D4DF9B /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AC14F8202C68B800D4DF9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63AC14FA202C68B800D4DF9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		63AC14FF202C68B800D4DF9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AC1502202C68B800D4DF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63AC1504202C68B900D4DF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63AC1514202DFFDA00D4DF9B /* 6df1cb779f522db682d5f5875cd2661d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6df1cb779f522db682d5f5875cd2661d.jpg; sourceTree = "<group>"; };
+		63AC1515202DFFDA00D4DF9B /* nba18mobile-intro_hero-xs-2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nba18mobile-intro_hero-xs-2x.jpg"; sourceTree = "<group>"; };
+		63AC1516202DFFDA00D4DF9B /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		63AC1518202DFFDA00D4DF9B /* lebron-james-nba-playoffs-run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lebron-james-nba-playoffs-run.jpg"; sourceTree = "<group>"; };
+		63AC151E2031AF4C00D4DF9B /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,11 @@
 			children = (
 				63AC14F7202C68B800D4DF9B /* SlideshowApp */,
 				63AC14F6202C68B800D4DF9B /* Products */,
+				63AC1514202DFFDA00D4DF9B /* 6df1cb779f522db682d5f5875cd2661d.jpg */,
+				63AC1516202DFFDA00D4DF9B /* images.jpeg */,
+				63AC1518202DFFDA00D4DF9B /* lebron-james-nba-playoffs-run.jpg */,
+				63AC1515202DFFDA00D4DF9B /* nba18mobile-intro_hero-xs-2x.jpg */,
+				63AC151E2031AF4C00D4DF9B /* images-1.jpeg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +77,7 @@
 				63AC14FF202C68B800D4DF9B /* Assets.xcassets */,
 				63AC1501202C68B800D4DF9B /* LaunchScreen.storyboard */,
 				63AC1504202C68B900D4DF9B /* Info.plist */,
+				63513B1C20373403005C48D9 /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,9 +141,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AC151D202DFFDA00D4DF9B /* lebron-james-nba-playoffs-run.jpg in Resources */,
 				63AC1503202C68B800D4DF9B /* LaunchScreen.storyboard in Resources */,
 				63AC1500202C68B800D4DF9B /* Assets.xcassets in Resources */,
+				63AC151A202DFFDA00D4DF9B /* nba18mobile-intro_hero-xs-2x.jpg in Resources */,
 				63AC14FE202C68B800D4DF9B /* Main.storyboard in Resources */,
+				63AC151F2031AF4C00D4DF9B /* images-1.jpeg in Resources */,
+				63AC1519202DFFDA00D4DF9B /* 6df1cb779f522db682d5f5875cd2661d.jpg in Resources */,
+				63AC151B202DFFDA00D4DF9B /* images.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +161,7 @@
 			files = (
 				63AC14FB202C68B800D4DF9B /* ViewController.swift in Sources */,
 				63AC14F9202C68B800D4DF9B /* AppDelegate.swift in Sources */,
+				63513B1D20373403005C48D9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
