@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var timer:Timer!
     var imageNo:Int = 0
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
@@ -25,7 +26,8 @@ override func viewDidLoad() {
             imageNo += 1
             imageView.image = imageListArray[imageNo]
         }else if imageNo == 3 {
-            imageView.image = imageListArray[0]
+            imageNo = 0
+            imageView.image = imageListArray[imageNo]
         }
     }
     @IBAction func backButton(_ sender: Any) {
@@ -33,30 +35,38 @@ override func viewDidLoad() {
             imageNo -= 1
         imageView.image = imageListArray[imageNo]
         }else if imageNo == 0 {
-            imageView.image = imageListArray[3]
+            imageNo = 3
+            imageView.image = imageListArray[imageNo]
         }
     }
     
     @IBAction func startPauseButton(_ sender: Any) {
-        imageView.animationImages = imageListArray
-        imageView.animationDuration = 8
-        imageView.animationRepeatCount = 0
         if startPauseButton.currentTitle == "停止"{
             nextButton.isEnabled = true
             backButton.isEnabled = true
-            imageView.stopAnimating()
+            self.timer.invalidate()
             startPauseButton.setTitle("再生", for: .normal)
         }else if startPauseButton.currentTitle == "再生"{
             nextButton.isEnabled = false
             backButton.isEnabled = false
-            imageView.startAnimating()
+            self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateImageNo), userInfo: nil, repeats: true)
             startPauseButton.setTitle("停止", for: .normal)
         }
     }
     override func prepare(for segue: UIStoryboardSegue , sender :Any?){
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.zoomImage = self.imageView.image!
-        
+        self.timer.invalidate()
+        nextButton.isEnabled = true
+        backButton.isEnabled = true
+        startPauseButton.setTitle("再生",for: .normal)
+    }
+    @objc func updateImageNo(timer:Timer){
+        if imageNo < 3{ self.imageNo += 1
+        }else if imageNo == 3{
+            imageNo = 0
+        }
+        imageView.image = imageListArray[imageNo]
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         
