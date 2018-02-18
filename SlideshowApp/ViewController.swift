@@ -56,10 +56,13 @@ override func viewDidLoad() {
     override func prepare(for segue: UIStoryboardSegue , sender :Any?){
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.zoomImage = self.imageView.image!
-        self.timer.invalidate()
+        if self.timer != nil{self.timer.invalidate()
         nextButton.isEnabled = true
         backButton.isEnabled = true
-        startPauseButton.setTitle("再生",for: .normal)
+            startPauseButton.setTitle("再生",for: .normal)
+        }else if self.timer == nil{
+            imageView.image = imageListArray[imageNo]
+        }
     }
     @objc func updateImageNo(timer:Timer){
         if imageNo < 3{ self.imageNo += 1
